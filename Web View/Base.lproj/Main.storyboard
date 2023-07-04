@@ -41,6 +41,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="EBO-5h-O9Z" id="uE1-CI-Fpg"/>
                         <outlet property="webView" destination="BYI-nR-svP" id="Ljy-NQ-0yZ"/>
                     </connections>
                 </viewController>

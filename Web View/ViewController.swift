@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     //MARK: Outlets
     @IBOutlet var webView: WKWebView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     // MARK: Functions
     override func viewDidLoad() {
@@ -33,11 +34,11 @@ class ViewController: UIViewController {
 extension ViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        <#code#>
+        activityIndicator.startAnimating()
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        <#code#>
+        activityIndicator.stopAnimating()
     }
     
 }
